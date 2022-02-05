@@ -23,6 +23,7 @@
 - 名字来源于: humongous 庞大的 -> Mongo
 - Key value pairs - mongodb 里存数据, 是以文档的形式存储(简单来说就是一个'JsonLike'的 document - Binary Json(BSON))
 - Collection
+  ```
     [{
       _id:ObjectId('xx2),
       name:'yyy'
@@ -31,6 +32,7 @@
       _id:ObjectId('xx3),
       username:'yyy' - mongodb 完全接受这样不同的形式的数据, 只要 id 不要重复
     }]
+  ```
 ### 2.1 MongoDB Terminology
 - Database Server - 需要先启动
 - Database
@@ -59,20 +61,19 @@
 - use <name> : use School (创建并且切换到 School db)
 - db 对象 : 当前的 db (school)
 - db.students ( student collection )
-- db.students.insertOne() (添加一个新 document 到当前 db(school)里的 student collection)
-  
-  db.students.insertOne({"name":"JR"})
-
-  {
-    "acknowledged" : true,
-    "insertedId" : ObjectId("61fe394c291d02c731e420e4")
-  }
-
-- db.students.find() - collections 里的文档
-- db.students.findOne({name:"JR"}) - 条件查询
-- db.stduents.updateOne({1},{2}) - 更新单个数据,参数{1}:查询条件, 参数{2}:更新成什么样子
+- insertOne() (添加一个新 document 到当前 db(school)里的 student collection)
+  ```
+    insertOne({"name":"JR"})
+    {
+      "acknowledged" : true,
+      "insertedId" : ObjectId("61fe394c291d02c731e420e4")
+    }
+  ```
+- find() - 找出collections 里的文档
+- findOne({name:"JR"}) - 条件查询
+- updateOne({1},{2}) - 更新单个数据,参数{1}:查询条件, 参数{2}:更新成什么样子
 - CRUD operator $
-
+  ```
     Update Operator 更新数据 : 
       $set -> db.stduents.updateOne({"name":"JR"},{$set:{"name":"JiangRen"}})
               db.students.updateOne({"name":"JiangRen"},{"hobbies":"Learning"}) 塞新的数据进去也是可以的
@@ -84,7 +85,7 @@
     Projection Operator : Used to limits only the first matching element from an array field
 
     Check more in MongoDB Documents: https://docs.mongodb.com/mongodb-shell/crud/#std-label-mdb-shell-crud
-
+  ```
 - 小 tips:
     tab(自动补全)
     括号没关上 db 会回(...)
@@ -99,6 +100,7 @@
   Embedded 嵌入式
     1对1 : 嵌入单个数据, 1对多:存一个array of object, 互相嵌套彼此的数据
 - Embedded 多对多
+  ```
     Student Collection - 这种结构的问题在于当你改单个数据的value,必须去全局collection里去找,然后更新所有的符合搜索条件内容
     [
       {
@@ -134,6 +136,7 @@
         ]
       },
     ]
+  ```
 - Normalization(单次出现) and Denormalization(数据有复制)
     做denormalization一般是为了只拿到自己要的信息, 减少关联操作 (populate)
     读请求更多就可以做denormalization
