@@ -28,7 +28,8 @@
 - 打开一个网站时会经历什么？ping输入的地址，请求DNS拿到ip地址，访问到对应网站的server，获取数据
 - DDoS Attack：一千万台机器执行ping命令，使被攻击网站的资源耗尽
 - IPv4和IPv6地址Header区别：IPv6地址栏更大，包的量更少
-- IPv4地址范围：图1
+- IPv4地址范围：
+ ![Screenshot](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE1.PNG)
 - HTTP 1.1 请求会发三个请求每个请求发一个文件， HTTP/2请求一次性会发三个文件
 - 地址栏左边有个锁的，是安全性网站，使用https的，client和website之间的隧道是加密的，have SSL
 - 如何让自己的网站变成https：certbot
@@ -62,7 +63,7 @@
 web application和website的区别，点击View Page Source，可以看到原始代码，web app大部分是js，切换时没有任何的加载，全部在一个页面里，website切换时，会切换不同的路由，切换不同的页面，web application也叫single page application
 ### 1.3 Single Page Application：
 - 用React做的页面，切换页面不需要刷新，会隐藏URL的Fragment部分
-- 图2
+ ![Screenshot](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE2.PNG)
 - Safari technology preview IOS设备debug
 - Genymotion 安卓设备debug
 - BrowserStack 多种设备debug 要花钱（但一般情况下公司会帮忙买）
