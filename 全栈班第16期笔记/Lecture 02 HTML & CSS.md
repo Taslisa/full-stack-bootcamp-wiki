@@ -120,14 +120,16 @@ Internal style: 也是不推荐，会让html显得很长
 写CSS的时候，表明他要附着在什么上面：
 - Class Selector：可复用，可叠加，一般最常用
 - Id Selector：只能用在一个element里，用一次，所以不是很常用
-！分清楚id, class的区别
-Q： 选择所有的<li>的第一个：
+> 分清楚id, class的区别
+
+#### Q： 选择所有的```<li>```的第一个：
 A： inline加入class=“first-li” 或者 CSS里使用 li:first-child
 *li:nth-child(3) 或者更specific 的 article p: first-child
-Q:  选择<a>的属性
+
+#### Q:  选择```<a>```的属性
 A：a:link 代表带href这个attribute的<a>, a:visited 代表链接点过之后的style，a: hover代表鼠标移到链接上面的style
 
-Q：当多个选择器作用于同一个element时，哪个会生效？
+#### Q：当多个选择器作用于同一个element时，哪个会生效？
 
 ![comflicting selector 1](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE4.PNG)
 ![comflicting selector 2](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE5.PNG)
