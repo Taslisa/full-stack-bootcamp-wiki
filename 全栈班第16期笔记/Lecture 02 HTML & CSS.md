@@ -1,10 +1,10 @@
 # Lecture 02 HTML & CSS
 
 ## 主要知识点
-  - [Lecture 02  HTML&CSS](#lecture-02-html&css)
+  - [Lecture 02 HTML&CSS](#lecture-02-htmlcss)
     - [2.1 HTML Introduction](#21-html-introduction)
-    	- [2.1.1 HTML基本结构](#211-html基本结构)
-    	- [2.1.2 live-server](#212-live-server)
+    	- [2.1.1 HTML基本结构](#211-html-基本结构)
+    	- [2.1.2 live server](#212-live-server)
     	- [2.1.3 ```<h1>```](#213-h1)
     	- [2.1.4```<p>```](#214-p)
     	- [2.1.5 ```<strong>```和```<em>```](#215-strong和em)
@@ -16,9 +16,9 @@
     	- [2.2.1 What is CSS](#221-what-is-css)
     	- [2.2.2 Ways to apply CSS](#222-ways-to-apply-css) 
     	- [2.2.3 选择器 Selector](#223-选择器-selector)
-    	- [2.2.4 RGB/RGBA Model](#224-rgb/rgba-model)
+    	- [2.2.4 RGB/RGBA Model](#224-rgbrgba-model)
     	- [2.2.5 Hex Model](#225-hex-model)
-    	- [2.2.6 Dev tool](#226-dev-tool)
+    	- [2.2.6 Dev tool(Chrome)](#226-dev-toolchrome)
 
 # 课堂笔记
 
@@ -51,7 +51,7 @@ HTML基本结构： open + closing tag + content
 - ```<!DOCTYPE html>``` 告诉浏览器或者文本编辑器这个文件是HTML file 
 - ```<head>``` 任何在head里的东西不会被浏览器渲染出来
 - ```<head>```、```<title>```、```<body>```有且只有一个
-#### 2.1.2  live-server
+#### 2.1.2 live server
 - 在VScode extension里安装Live-server 插件，完成后点击右下角Go-live选项，会打开浏览器
 或者在直接右击index.html open with Chrome
 
@@ -81,7 +81,7 @@ HTML基本结构： open + closing tag + content
 
 - src：来源，如果图片文件在当前路径，直接使用xxx.jpg, 若在其他地方的img文件夹里，则加上 ./img/xxx.jpg
 
-图3
+![file pathway](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE3.PNG) 
 
 - alt:  图片描述，img加载不出来，告诉它这个图片是干嘛的, 
 
@@ -128,7 +128,10 @@ Q:  选择<a>的属性
 A：a:link 代表带href这个attribute的<a>, a:visited 代表链接点过之后的style，a: hover代表鼠标移到链接上面的style
 
 Q：当多个选择器作用于同一个element时，哪个会生效？
-A：图3 图4
+
+![comflicting selector 1](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE4.PNG)
+![comflicting selector 2](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE5.PNG)
+
 
 #### 2.2.4 RGB/RGBA Model
 每种颜色都可以用Red、Green、Blue(+Transparency)的结合来表示
