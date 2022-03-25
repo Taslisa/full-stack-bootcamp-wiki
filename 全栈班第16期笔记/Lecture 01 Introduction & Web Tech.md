@@ -8,7 +8,7 @@
       - [1.2.2 Network](#122-network)
       - [1.2.3 Source](#123-source)
       - [1.2.4 Application](#124-application)
-      - [1.2.5 Performance](#125-performace)
+      - [1.2.5 Performance](#125-performance)
       - [1.2.6 Coverage](#126-coverage)
       - [1.2.7 Security](#127-security)
       - [1.2.8 LightHouse](#128-lighthouse)
