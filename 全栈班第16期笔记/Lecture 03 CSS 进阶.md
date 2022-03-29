@@ -3,7 +3,7 @@
 ## 主要知识点
 - [Lecture 03 CSS进阶](#lecture-03-css进阶)
   - [3.1 Recap](#31-recap)
-  	- [3.1.1 File Path 工作原理](#311-file-path-工作原理）
+  	- [3.1.1 File Path](#311-file-path)
   	- [3.1.2 HTML语义化](#312-html-语义化)
   - [3.2 CSS 进阶](#32-css进阶)
   	- [3.2.1 Inheritance](#321-inheritance)
@@ -35,7 +35,7 @@ article p:first-child 无法执行的理由：
 ```<article>```里面的第一个element不是```<p>```
 可以改成 article header:first-child
 
-#### 3.1.1 File Path 工作原理
+#### 3.1.1 File path
 absolute path: file or directory from the root
 relative path: 把current working directory加进考虑
 > . (代表current directory)
@@ -62,10 +62,10 @@ Benefits：
 
 #### 3.2 CSS 进阶
 #### 3.2.1 Inheritance
-图6
+![img6](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE6.PNG)
 
 #### 3.2.2 CSS Box modal
-图7
+![img7](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE7.PNG)
 - Final element width = left border + left padding + width + right padding + right border 
 - top border + top padding + height + bottom padding + bottom border
 
@@ -86,7 +86,7 @@ display：block 是default设置的元素为：body，main，header，footer，s
 inline element：只占据对内容展示来说必要的空间，不会全部占据parent element的width，给inline 元素加margin或padding，有时不会apply到全部上下左右
 display：inline 是default设置的元素为：a，img，strong，em，button。。。
 
-图8
+![img8](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE8.PNG)
 
 #### 3.2.6 position
 static：postioning不起作用
@@ -114,7 +114,7 @@ vw,vh: 占据在能看到的视窗大小上的百分比，用的比较少
 #### 3.2.8 Responsive Web Design
 - 随着屏幕的缩放，缩放页面上的内容，拉到一定程度，超过breakpoint后，style会变
 
-#### 3.2.9 CSS Library
+#### 3.2.9 CSS library
 >Bootstrap: https://getbootstrap.com/
 >Foundation https://get.foundation/
 >Pure CSS https://purecss.io/
