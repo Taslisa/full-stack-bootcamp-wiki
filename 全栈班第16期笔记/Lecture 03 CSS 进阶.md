@@ -1,11 +1,11 @@
 # Lecture 03 CSS 进阶
 
 ## 主要知识点
-- [Lecture 03 CSS进阶](#lecture-03-css进阶)
+- [Lecture 03 CSS进阶](#lecture-03-css-进阶)
   - [3.1 Recap](#31-recap)
   	- [3.1.1 File Path](#311-file-path)
   	- [3.1.2 HTML语义化](#312-html-语义化)
-  - [3.2 CSS 进阶](#32-css进阶)
+  - [3.2 CSS 进阶](#32-css-进阶)
   	- [3.2.1 Inheritance](#321-inheritance)
   	- [3.2.2 CSS Box modal](#322-css-box-modal)
   	- [3.2.3 margin](#323-margin)
@@ -14,7 +14,7 @@
   	- [3.2.6 position](#326-position)
   	- [3.2.7 Units](#327-units)
   	- [3.2.8 Responsive Web Design](#328-responsive-web-design)
-  	- [3.2.9 CSS Library](#css-library)   
+  	- [3.2.9 CSS Library](#329-css-library)   
 
 
 # 课堂笔记
