@@ -115,11 +115,11 @@ vw,vh: 占据在能看到的视窗大小上的百分比，用的比较少
 - 随着屏幕的缩放，缩放页面上的内容，拉到一定程度，超过breakpoint后，style会变
 
 #### 3.2.9 CSS library
->Bootstrap: https://getbootstrap.com/
->Foundation https://get.foundation/
->Pure CSS https://purecss.io/
->Mobi CSS https://getmobicss.com/
->Semantic UI https://semantic-ui.com/
+- Bootstrap: https://getbootstrap.com/
+- Foundation https://get.foundation/
+- Pure CSS https://purecss.io/
+- Mobi CSS https://getmobicss.com/
+- Semantic UI https://semantic-ui.com/
 
 
 
