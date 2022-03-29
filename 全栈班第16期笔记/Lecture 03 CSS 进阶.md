@@ -39,17 +39,22 @@ article p:first-child 无法执行的理由：
 absolute path: file or directory from the root
 relative path: 把current working directory加进考虑
 > . (代表current directory)
+
 > ..（代表parent directory）
+
 > pwd 会把current working directory给显示出来
+
 > cd chang directory帮助在file system中navi
 
 Folder 结构:
->-- assets
-		--img
+```
+-- assets
+		--img		
 -- styles
 -- templates
 		blog.html
 		index.html (You are here)
+```
 - 想要access img folder里的图片，需要把路径改成
 ../assets/img/xxx.jpg
 
