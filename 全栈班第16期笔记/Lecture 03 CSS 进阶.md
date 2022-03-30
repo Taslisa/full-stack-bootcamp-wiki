@@ -81,7 +81,7 @@ margin: 跟外界的距离，border的外面，跟着上和左走;
 把左边margin和右边margin能找到的最大空间做一个对半分
 
 #### 3.2.4 padding
-padding : 25px(top), 50px(left),50px(right),25px(bottom)
+padding : 25px(top), 50px(right),50px(bottom),25px(left)
 margin 的简写规则和 padding一致
 
 #### 3.2.5 block和inline elements
