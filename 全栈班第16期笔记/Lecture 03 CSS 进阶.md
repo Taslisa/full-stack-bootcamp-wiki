@@ -94,7 +94,7 @@ inline element：只占据对内容展示来说必要的空间，不会全部占
 ![img8](https://github.com/australiaitgroup/full-stack-bootcamp-wiki/blob/main/%E5%85%A8%E6%A0%88%E7%8F%AD%E7%AC%AC16%E6%9C%9F%E7%AC%94%E8%AE%B0/img/%E5%9B%BE8.PNG)
 
 #### 3.2.6 position
-- static：postioning不起作用
+- static：positioning不起作用
 - relative：和原始位置做对比，如原始位置为x，则top：30px 将element往下推 30px
 - fixed： position relative to viewport，随着缩放黏在viewport的某个地方，不常用
 - ***absolute（常用）***：position to nearest position ancestor（该ancestor的postion状态须为relative），如果没有position ancestor，则使用document body，且会随着页面滑动而滑动
