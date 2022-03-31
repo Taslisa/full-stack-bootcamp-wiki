@@ -1,23 +1,23 @@
 # Lecture 04 HTML & CSS
 
 ## 主要知识点
-  - [Lecture 04  HTML&CSS](#lecture-02-html&css)
-    - [4.1 Flexbox](#21-html-introduction)
+  - [Lecture 04  HTML&CSS](#lecture-04-htmlcss)
+    - [4.1 Flexbox](#41-flexbox)
     	- [4.1.1 flex container/flex items](#411-flex-containerflex-items)
     - [4.2 Responsive Web Design](#42-responsive-web-design)
     	- [4.2.1 Media query](#421-media-query)
-    - [4.3 SASS/SCSS](#43-sass)
+    - [4.3 SASS/SCSS](#43-sassscss)
     	- [4.3.1 Use&Install SASS](#431-useinstall-sass)
     	- [4.3.2 Nesting](#432-nesting)
     	- [4.3.3 Varibles](#433-varibles)
-    	- [4.3.4 Map/Lists](#434-maplists)
+    	- [4.3.4 Maps/Lists](#434-mapslists)
     	- [4.3.5 Built-in Functions](#435-built-in-functions)
     	- [4.3.6 Better Import](#436-better-import)
     	- [4.3.7 Improve Media Query](#437-improve-media-query)
     	- [4.3.8 Inheritance](#438-inheritance)
     	- [4.3.9 Mixin](#439-mixin)
     - [4.4 Bootstrap](#44-bootstrap)
-    - [4.4 个人网站参考](#44-个人网站参考)
+    - [4.5 个人网站参考](#45-个人网站参考)
 
 # 课堂笔记
 
@@ -28,17 +28,17 @@
 - align items to one another
 - vertical centering / create equal height columns
 - 用来代替 float
-![flexbox](img/图 9.png)
+![flexbox](img/图9.PNG)
 
 #### 4.1.1 flex container/flex items
-![container/items](img/图10.png)
+![container/items](img/图10.PNG)
 flex container
 没有定义flex时，每一个新的元素都会占据parent element的一个new line
 - gap: 不算上margin的 item间的space，不能有负值
 - justify-content：沿着main axis进行alignment
-![justify](img/图11.png)
+![justify](img/图11.PNG)
 - align-items：沿着cross axis进行alignment，初始值为 stretch
-![align](img/图12.png)
+![align](img/图12.PNG)
 - flex-wrap：如果container不够大，定义wrap可以把超出container的element调节到newline
 
 
@@ -52,17 +52,17 @@ flex items
 > flexbox 塔防游戏：http://www.flexboxdefense.com/
 
 #### 4.2 Responsive Web Design
-![RWD](img/图14.png)
+![RWD](img/图14.PNG)
 #### 4.2.1 Media query
 - 实时读取所使用屏幕尺寸的值，在ccs中写入某一条件，当屏幕尺寸到达该条件的值之后，该条件下的css会被触发，由此在不同屏幕宽度赋予element不同的属性
-![media query](img/图13.png)
+![media query](img/图13.PNG)
 Q： 如上图，若屏幕尺寸小600px，则上面哪个条件会被触发？
 - A：两个都在作用。小一点的breakpoint作用域最好放在上面，不然会被较大的作用域overwrite，因此写代码的时候最好把较为specific的css selector写在下面
 -  使用 media query时需要设置好下列：
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
-
+![media query2](img/图15.PNG)
 
 
 
@@ -72,7 +72,7 @@ Q： 如上图，若屏幕尺寸小600px，则上面哪个条件会被触发？
 - 提供简单的逻辑计算方程
 - 开启了模块化的可能性
 
-#### 4.3.1  Use&Install SASS
+#### 4.3.1 Use&Install SASS
 https://sass-lang.com/guide   
 用更新的语言实现css，再编译成css
 - 安装方式：```npm install sass -g```
