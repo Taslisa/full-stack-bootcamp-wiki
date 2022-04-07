@@ -25,7 +25,7 @@
 
 # 课堂笔记
 
-### Lecture 05 JavaScript
+### Lecture 05
 #### 5.1 HTML+CSS+JS
 - HTML: Content Structure
 - CSS: Content Presentation (Layout and Design)
@@ -503,9 +503,9 @@ pluusButton.addEventListener('click',function(){
 #### 5.13 JS异步加载
 - 通常情况下，我们会把script tag放在head里。考虑这种情况，如果某一个script文件需要花费很久时间下载，执行。我们的⻚面会是什么情况。
 ![jsloading1](./img/图21.PNG)
-![jsloading2](./img/图22.PNG)
+![jsloading2](./img/图22.png)
 ![jsloading3](./img/图23.PNG)
-![jsloading4](./img/图24.PNG)
+![jsloading4](./img/图24.png)
 
 #### 课后作业
 
