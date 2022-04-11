@@ -182,7 +182,7 @@ Open Source 开发中，没人愿意去设置一个central repository, 于是就
    `git commit`来完成merge操作
    - 建议在vs code里弹出的conflict 解决窗口中，选择`accept both changes`，即将两边的内容同时接受，再酌情更改
    - 关于在conflict的显示内容，其中的符号含义，可参考下图
-   ![git conflict](image/图24.PNG)  
+   ![git conflict](img/图25.png)  
 
 #### 6.7 使用Github进行团队写协作：多条线的历史
 现在工作中多用Github，有的公司里可能用到自建的Git Server
