@@ -5,17 +5,14 @@
   - [主要知识点](#主要知识点)
 - [课堂笔记](#课堂笔记)
   - [7.0 ES6](#70-es6)	 
-  - [7.1 var vs let and const](#71-let-and-const)
+  - [7.1 var vs let and const](#71-var-vs-let-and-const)
   - [7.2 Template String](#72-template-string)
   - [7.3 Spread operator](#73-spread-operator)
   - [7.4 Destructuring](#74-destructuring)
   - [7.5 Default parameters](#75-default-parameters)
   - [7.6 Arrow function](#76-arrow-function)
   - [7.7 this](#77-this)
-  - [7.8 Common array operations](#78-common-array-operations)
-  - [7.9 Set](#79-set)
-  - [7.10 Classes](#710-classes)
-  - [7.11 Closure](#711-closure)
+ 
 # 课堂笔记
 
 ### Lecture 07
@@ -214,7 +211,7 @@ function foo(){};
 Extra reading source
 [Var, Let, and Const – What's the Difference?](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
 
-## Template String
+## 7.2 Template String
 
 Also named, template literal, string interpolation
 
@@ -228,7 +225,7 @@ console.log('My name is ' + name + ", and I'm " + age + ' years old');
 console.log(`My name is ${name}, and I\'m ${age} years old`);
 ```
 
-## Spread operator
+## 7.3 spread operator
 - 克隆array以及object，或者把原本的元素原原本本地复制下来，在前后添加新的元素
 ```js
 const array = [1, 2];
@@ -255,7 +252,7 @@ fruit.location.city => sydney;
 ```
 [deep clone](https://flaviocopes.com/how-to-clone-javascript-object/)
 
-## Destructuring
+## 7.4 Destructuring
 - 解构赋值
 Object destructuring extracts property from object and assigns it to variables.
 One way would be using the dot notation
@@ -333,7 +330,7 @@ const [missing = true] = [];
 console.log(missing); // true
 ```
 
-## Default parameters
+## 7.5 Default parameters
 
 ```js
 function sum(a = 1, b = 1) {
@@ -344,7 +341,7 @@ console.log(sum(undefined, 2)); // 3
 console.log(sum(3, 4)); // 7
 ```
 
-## Arrow function
+## 7.6 Arrow function
 
 ```js
 const add = function (x, y) {
@@ -462,7 +459,7 @@ Commonly used to avoid polluting the global namespace and modules!
 })();
 ```
 
-## this
+## 7.7 this
 
 In most cases, the value of `this` is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. [[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)]\* \*[strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) is enabled by default in ES6 modules
 - this的目的是让我们理解context，在代码运行的时候谁在调用它，this就指向谁
@@ -635,298 +632,5 @@ foo(object.cb); // Hello undefined
 object.cb(); // Hello mason
 ```
 
-## Common array operations
 
-### Manipulation
 
-```js
-const fruits = ['apple'];
-
-fruits.push('pear');//push 尾部添加
-console.log(fruits); // ["apple", "pear"]
-fruits.unshift('grape');//unshift 头部删除
-console.log(fruits); // ["grape", "apple", "pear"]
-// splice(x,y,newAdded)
-// remove y items from index x, and add newAdded
-fruits.splice(1, 1, 'watermelon', 'peach');
-console.log(fruits); // ["grape", "watermelon", "peach", "pear"]
-let fruit = fruits.pop();
-console.log(fruit); // pear
-console.log(fruits); //  ["grape", "watermelon", "peach"]
-fruit = fruits.shift();
-console.log(fruit); // grape
-console.log(fruits); // ["watermelon", "peach"]
-```
-
-### Iteration
-
-#### for loop
-
-```js
-const fruits = ['apple', 'pear'];
-for (let index = 0; index < fruits.length; index++) {
-  const fruit = fruits[index];
-  console.log(fruit);
-}
-// apple
-// pear
-```
-
-#### for...of
-
-```js
-const fruits = ['apple', 'pear'];
-for (let fruit of fruits) {
-  console.log(fruit);
-}
-// apple
-// pear
-
-// for...in -> 0, 1    usually used in object
-```
-
-#### forEach
-
-```js
-const fruits = ['apple', 'pear'];
-fruits.forEach((fruit) => console.log(fruit));
-// apple
-// pear
-// cannot use break here forEach一定会把每一项都取出来遍历一遍
-```
-
-### Map
-- 映射，在保证原始数组和新数组长度一致的情况下，用于把原始数组映射到新数组
-```js
-const fruits = ['apple', 'pear'];
-const newFruits = fruits.map((fruit) => ({
-  name: fruit,
-  price: 10,
-}));
-console.log(newFruits);
-// [{name: "apple", price: 10},{name: "pear", price: 10}]
-```
-
-### Reduce
-
-```js
-const numbers = [1, 2, 3];
-const sum = numbers.reduce((accumulator, number) => accumulator + number, 0);
-console.log(sum); // 6
-```
-
-### Search
-
-```js
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.includes(2)); // true
-// Array.some
-console.log(numbers.indexOf(2)); // 1
-// Array.findIndex
-```
-
-```js
-const numbers = [1, 2, 3, 4, 5];
-const odds = numbers.filter((i) => i % 2);//filter会把整个数组遍历一遍，找到所有符合要求的元素
-console.log(odds); // [1,3,5]
-
-const fruits = [
-  {
-    name: 'apple',
-    color: 'red',
-  },
-  {
-    name: 'pear',
-    color: 'green',
-  },
-  {
-    name: 'grape',
-    color: 'green',
-  },
-];
-const filteredFruits = fruits.filter((i) => i.color === 'green');
-console.log(filteredFruits);
-// [{name: "pear", color: "green"}, {name: "grape", color: "green"}]
-```
-
-```js
-//在 ES5 中，要在数组中查找元素，可以使用 indexOf() 或 lastIndexOf() 方法。但是，这些方法非常有限，因为它们只返回第一个匹配元素的索引。
-
-//ES6 引入了一个名为 find() 的新方法，添加到 Array.prototype 对象中。
-//find会返回第一个匹配元素的元素本省
-const fruits = [
-  {
-    name: 'apple',
-    color: 'red',
-  },
-  {
-    name: 'pear',
-    color: 'green',
-  },
-  {
-    name: 'grape',
-    color: 'green',
-  },
-];
-const greenFruit = fruits.find((i) => i.color === 'green');//查看返回的值是否为True
-console.log(greenFruit);
-// {name: "pear", color: "green"}
-```
-
-#### Extra reading source
-
-[link](https://dmitripavlutin.com/operations-on-arrays-javascript/)
-
-## Set
-
-Set is a data structure, we use it to store _unique_ values.
-
-```js
-const set = new Set([1, 2, 3, 4, 4]);
-console.log(set); // Set(4) {1, 2, 3, 4}
-set.add(5);
-console.log(set); // Set(5) {1, 2, 3, 4, 5}
-set.add(1);
-console.log(set); // Set(5) {1, 2, 3, 4, 5}
-console.log(set.has(5)); // true
-set.delete(1);
-console.log(set.has(1)); // false
-console.log(set.size); // 4
-```
-
-```js
-//对array进行去重
-const array = [1, 2, 2, 3, 4, 4];
-const uniqueArray = [...new Set(array)];
-console.log(uniqueArray); // [1, 2, 3, 4]
-//注意如果array中有object，且写的形式如下
-const set = new Set()
-const a = {a:1}
-const b = {a:1}
-// Set 不会对[a,b]去重，因为两个object的reference不一样
-//注意object里不能出现重复的属性，如果出现的话，后面的value会把前面的覆盖掉
-```
-
-## Classes
-- ES6新引入的属性，可以把其代码写成类似java里的class，但其本质还是function
-- 在javascript里，inheritance继承是基于原型Prototype
-Classes are a template for creating objects. Classes are in fact functions, class is only a syntax sugar（语法糖).
-
-```js
-function Person(name) {
-  this.name = name;
-  this.toString = function () {
-    console.log('name: ' + this.name);
-  };
-}
-var mason = new Person('mason');
-mason.toString(); // name: mason
-
-//if coded like this:
-var mason = Person('mason');//就是调用一个普通函数
-object === undefined // True 原函数没有声明return的话，默认return:undefined；
-```
-
-```js
-//换了一个名字的function，但是class会自动绑定相应的原型，不再需要bind()
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-  toString() {
-    console.log(`name: ${this.name}`);
-  }
-}
-const mason = new Person('mason');
-mason.toString(); // name: mason
-```
-
-### extends
-
-```js
-class Teacher extends Person {
-  constructor(name) {
-    super(name);
-  }
-  teach() {
-    console.log(`${this.name} is teaching`);
-  }
-}
-
-const mason = new Teacher('mason');
-mason.teach(); // mason is teaching
-mason.toString(); // name: mason -> BUT how?
-//子类继承父类后，可以使用父类的constructor()和methods
-
-//if code like this:
-function Person(name) {
-  this.name = name;
-  this.toString = function () {
-    console.log('name: ' + this.name);
-  };
-  return 1;
-}
-const mason = new Person("")
-mason // Person{name:'',toString:f} 会把原本的return:1；覆盖掉
-
-//if code like this：
-function Person(name) {
-  this.name = name;
-  this.toString = function () {
-    console.log('name: ' + this.name);
-  };
-  return {a:1};
-}
-const mason = new Person("")
-mason //{a：1} 不会被替换掉
-```
-
-```js
-// is mason constructed by Teacher?
-mason instanceof Teacher; // true
-mason instanceof Person; // true
-mason instanceof Object; // true
-```
-
-## quiz
-
-```js
-function Pet(name) {
-  this.name = name;
-  this.getName = () => this.name;
-}
-
-const cat = new Pet('Fluffy');
-
-console.log(cat.getName()); // Fluffy
-
-const { getName } = cat;
-console.log(getName()); // Fluffy
-```
-
-```js
-var scope = 'global scope';
-function checkscope() {
-  var scope = 'local scope';
-  function f() {
-    return scope;
-  }
-  return f();//返回function执行的结果
-}
-checkscope(); // local
-```
-
-```js
-var scope = 'global scope';
-function checkscope() {
-  var scope = 'local scope';
-  function f() {
-    return scope;
-  }
-  return f;
-}
-checkscope()(); // local
-```
-
-Quiz questions references
-[1](https://dmitripavlutin.com/javascript-this-interview-questions/#question-1-variable-vs-property)
