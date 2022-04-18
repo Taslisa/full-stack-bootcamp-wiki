@@ -358,13 +358,13 @@ Quiz questions references
 
 ### About Nodejs
 - 优势：灵活，可以用JavaScript打通前后端
-![webpage](img/图26.JPG)
+![webpage](img/图26.jpg)
 - 前端的文件属于static assets，决定网页会显示什么内容，但内容里的信息是从后端服务器取回的
 - 流程：用户请求页面----页面框架被下载下来----发相应的API请求来获取相应的数据------数据返回到前端页面----javascript把返回的数据与页面进行拼接---最终显示成实际开发的页面的样子
 >Q：请求第三方API时，第三方API的token是从前端还是后端获取？
 >A：为了安全性考虑，一般会把token存在后端, 但平常会按照第三方平台给出的示例代码来做
 
-![webpage 2](img/图27.JPG)
+![webpage 2](img/图27.jpg)
 
 - 异步 Async 事件驱动
     + JavaScript是单线程，因此同时只能做一件事，如网页代码中包含需要加载很长时间的图片，后面的代码会被阻塞住，无法执行
