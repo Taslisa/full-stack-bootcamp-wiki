@@ -13,7 +13,7 @@
     - [9.6 JSON](#96-json)
     - [9.7 SOAP](#97-soap)
     - [9.8 API](#98-api)
-    - [9.9 REST (Representational state transfer)](#99 rest-representational-state-transfer)
+    - [9.9 REST (Representational state transfer)](#99-rest-representational-state-transfer)
     - [9.10 RESTful API 设计规范 ](#910-restful-api-设计规范)
     - [9.11 Microservices](#911-microservices)
   - [Practise](#建议)
