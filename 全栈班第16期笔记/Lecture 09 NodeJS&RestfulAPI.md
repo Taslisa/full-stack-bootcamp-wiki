@@ -17,6 +17,7 @@
     - [9.10 RESTful API 设计规范 ](#910-restful-api-设计规范)
     - [9.11 Microservices](#911-microservices)
   - [Practise](#建议)
+  - [作业](#作业）
 
 
 ## 课堂笔记 RESTful API
@@ -166,3 +167,6 @@
 - Use postman to practise api calls
 - https://newsapi.org/
 - 开发时先用注释表示流程，有助于面试思路
+#### 作业
+- 创建账户作为训练师，抓pokemon，放pokemon，训练Pokemon
+- http://poke-world-server.herokuapp.com/
