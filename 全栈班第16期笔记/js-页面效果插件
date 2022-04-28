@@ -1,0 +1,2 @@
+- https://www.youtube.com/watch?v=qEcXe51-ZTw&list=PLbuudW_Zu81itMpEZxjN3265j_LIS1B6x&index=7 text typing
+- https://glidejs.com/  slider
