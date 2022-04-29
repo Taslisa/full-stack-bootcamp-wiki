@@ -1,7 +1,7 @@
 # Lecture 11 Agile&Scrum
 
 ## 主要知识点
-- [Lecture 11 Agile](#Lecture-11-agile)
+- [Lecture 11 Agile&Scrum](#Lecture-11-agilescrum)
   - [主要知识点](#主要知识点)
   - [课堂笔记 Agile](#课堂笔记-agile)
   	- [11.1 为什么使用敏捷开发？](#111-为什么使用敏捷开发) 
@@ -16,7 +16,7 @@
 ## 课堂笔记 Agile
 
 #### 11.1 为什么使用敏捷开发？
-#### 11.1.1  Software Development Life Cycle（SDLC)
+#### 11.1.1 Software Development Life Cycle（SDLC)
   ![SDLC](./img/图33.PNG)
   - Designer 会在Design阶段提供详细的设计图，Detailed Design（API、UI、UE、color等）
   - Developer在Build阶段进行coding，Devops创建云端framework
@@ -27,7 +27,7 @@
 
 
 
-#### 11.1.2  SDLC Model软件开发生命周期的两种模型
+#### 11.1.2 SDLC Model软件开发生命周期的两种模型
   ![SDLC](./img/图34.PNG)
 	- 陈旧的项目管理方式
 	- Waterfall是从上至下的，无法回到上一阶段
