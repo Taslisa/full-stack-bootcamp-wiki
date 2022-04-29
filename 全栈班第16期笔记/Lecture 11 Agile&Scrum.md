@@ -3,7 +3,7 @@
 ## 主要知识点
 - [Lecture 11 Agile&Scrum](#Lecture-11-agilescrum)
   - [主要知识点](#主要知识点)
-  - [课堂笔记 Agile](#课堂笔记-agile)
+  - [课堂笔记](#课堂笔记)
   	- [11.1 为什么使用敏捷开发？](#111-为什么使用敏捷开发) 
     	- [11.1.1 Software Development Life Cycle (SDLC)](#1111-software-development-life-cycle-sdlc)
     	- [11.1.2  SDLC Model软件开发生命周期的两种模型](#1112-sdlc-model软件开发生命周期的两种模型)
@@ -13,7 +13,7 @@
     - [11.3 什么是Scrum？](#113-什么是scrum)
     - [作业](#作业)
 
-## 课堂笔记 Agile
+## 课堂笔记
 
 #### 11.1 为什么使用敏捷开发？
 #### 11.1.1 Software Development Life Cycle（SDLC)
