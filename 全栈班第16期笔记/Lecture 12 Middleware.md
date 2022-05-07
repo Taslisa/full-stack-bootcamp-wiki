@@ -168,7 +168,7 @@ app.use('/v1',v1Router); //指/v1后面的东西
 ```
 
 
-`app.use(express.json())`能把request中的json格式的数据解析成js object，加括号的原因是，express.json是一个普通函数，他执行后返回一个middleware function，最终目的是使用app.use调用这个middleware
-`app.use(express.urlencoded({extended:true}));` 能把前端提交的x-www-form-urlencoded格式表单解析出来并拆分成js object
-`body-parser`是express的一个依赖项
+- `app.use(express.json())`能把request中的json格式的数据解析成js object，加括号的原因是，express.json是一个普通函数，他执行后返回一个middleware function，最终目的是使用app.use调用这个middleware
+- `app.use(express.urlencoded({extended:true}));` 能把前端提交的x-www-form-urlencoded格式表单解析出来并拆分成js object
+- `body-parser`是express的一个依赖项
 
