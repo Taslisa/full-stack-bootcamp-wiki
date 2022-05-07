@@ -1,6 +1,6 @@
 ## CORS PROBLEM SOLUTION
 
-![cors1](./img/图45.PNG)
+![cors1](./img/图45.png)
 ```js
 const cors = (req,res,next) => {
   res.setHeader('Access-Control-Allow-Origin','*');
@@ -9,7 +9,7 @@ const cors = (req,res,next) => {
 
 app.use(cors);
 ```
-![cors2](./img/图46.PNG)
+![cors2](./img/图46.png)
 ```js
 const cors = (req,res,next) => {
   res.setHeader('Access-Control-Allow-Origin','*');
@@ -18,7 +18,7 @@ const cors = (req,res,next) => {
 }
 app.use(cors);
 ```
-![cors3](./img/图47.PNG)
+![cors3](./img/图47.png)
 ```js
 const cors = (req,res,next) => {
   res.setHeader('Access-Control-Allow-Origin','*');
