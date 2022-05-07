@@ -18,8 +18,9 @@ const cors = (req,res,next) => {
 }
 app.use(cors);
 ```
-- 总结
 ![cors3](./img/图47.png)
+
+- 总结
 ```js
 const cors = (req,res,next) => {
   res.setHeader('Access-Control-Allow-Origin','*');
